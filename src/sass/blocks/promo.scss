@@ -83,8 +83,11 @@
     &__btn {
         @include btn;
         &-orange {
+            border: none;
             background-color: #f3a917;
-            color: #000;
+            a{
+                color: #000;
+            }
         }
     }
 }
