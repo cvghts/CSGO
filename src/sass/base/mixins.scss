@@ -1,0 +1,19 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin divider {
+    width: 720px;
+    height: 2px;
+    background-color: #F3A917;
+}
+
+@mixin btn {
+    border: 2px solid #f3a917;
+    padding: 15px 20px;
+    width: 246px;
+    height: 50px;
+    background-color: transparent;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
