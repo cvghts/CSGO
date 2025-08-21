@@ -1,23 +1,48 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "/src/sass/style.scss";
 
-document.addEventListener('DOMContentLoaded', () => {
-    const promo = document.querySelector('.promo');
-    const dots = document.querySelectorAll('.promo__dot');
-    const images = [
-        '/src/img/main_bg.jpg',
-        '/src/img/main_bg_4.jpg',
-        '/src/img/main_bg_3.jpg'
-    ];
-
-    const updateSlider = (index) => {
-        promo.style.backgroundImage = `url(${images[index]})`;
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[index].classList.add('active');
-    };
-
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            updateSlider(index);
+try {
+    document.addEventListener('DOMContentLoaded', () => {
+        const promo = document.querySelector('.promo');
+        const dots = document.querySelectorAll('.promo__dot');
+        const images = [
+            '/src/img/main_bg.jpg',
+            '/src/img/main_bg_4.jpg',
+            '/src/img/main_bg_3.jpg'
+        ];
+    
+        const updateSlider = (index) => {
+            promo.style.backgroundImage = `url(${images[index]})`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        };
+    
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                updateSlider(index);
+            });
         });
     });
-});
+} catch (e) {}
+
+try {
+    const swiper = new Swiper('.events__slider', {  
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+        modules: [Navigation, Pagination],
+      });
+} catch (e) {}

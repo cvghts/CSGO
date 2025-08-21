@@ -1,0 +1,32 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.stages {
+    padding-top: 145px;
+    background-color: #f3a917;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 608px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        color: #000;
+        font-style: normal;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+        span {
+            color: $white;
+        }
+    }
+    &__date {
+        display: flex;
+    }
+}
