@@ -1,0 +1,44 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.registered {
+    min-height: 1324px;
+    padding-top: 510px;
+    padding-bottom: 89px;
+    background: url('/src/img/main_bg_2.jpg') no-repeat center/cover;
+    &__wrapper {
+        width: 652px;
+        margin-left: auto; 
+    }
+    &__title {
+        color: $white;
+        font-weight: 700;
+        font-size: 32px;
+        font-style: normal;
+        line-height: normal;
+        text-align: center;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 25px;
+        font-style: normal;
+        line-height: normal;
+        color: $white;
+        text-align: center;
+    }
+    // отут буде таблиця
+    &__nav {
+        margin-top: 56px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        &_item {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: normal;
+            font-style: normal;
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+}
