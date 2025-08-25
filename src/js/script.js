@@ -32,7 +32,7 @@ try {
 
 try {
     const swiper = new Swiper('.events__slider', {  
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         pagination: {
@@ -42,6 +42,20 @@ try {
         navigation: {
           nextEl: '.button-next',
           prevEl: '.button-prev',
+        },
+        breakpoints: {
+            1199: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1439: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1800: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
         },
         modules: [Navigation, Pagination],
       });

@@ -1,7 +1,6 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .registered {
-    min-height: 1324px;
     padding-top: 510px;
     padding-bottom: 89px;
     background: url('/src/img/main_bg_2.jpg') no-repeat center/cover;
@@ -25,7 +24,47 @@
         color: $white;
         text-align: center;
     }
-    // отут буде таблиця
+    &__table {
+        margin-top: 2px;
+        width: 100%;
+        text-align: left;
+        thead {
+            background-color: #f3a917;
+            color: #000;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: normal;
+            font-style: normal;
+            th {
+                border: 1px solid #f3a917;
+                padding: 10px;
+            }
+        }
+        tbody {
+            color: $white;
+            background-color: #292a2f;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: normal;
+            font-style: normal;
+            td {
+                border: 1px solid #f3a917;
+                padding: 10px;
+                img {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .table__number {
+        text-align: center;
+        width: 73px;
+    }
+    .table__command {
+        font-weight: 500;
+        padding: 10px 10px 10px 20px;
+    }
     &__nav {
         margin-top: 56px;
         display: flex;
@@ -39,6 +78,20 @@
             font-style: normal;
             color: $white;
             text-transform: uppercase;
+        }
+    }
+}
+
+@media  screen and (max-width: 1201px) {
+    .registered {
+        background: url('/src/img/main_bg_2.jpg') no-repeat 30%/cover;
+        &__wrapper {
+            width: 100%; 
+        }
+        &__nav {
+            justify-content: center;
+            column-gap: 100px;
+            row-gap: 20px;
         }
     }
 }

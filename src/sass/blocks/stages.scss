@@ -59,7 +59,7 @@
         position: absolute;
         width: 76px;
         left: 208px;
-        top: 80px;
+        top: 36px;
     }
     &__divider2 {
         @include divider;
@@ -67,7 +67,7 @@
         position: absolute;
         width: 76px;
         left: 486px;
-        top: 80px;
+        top: 36px;
     }
     &__btn {
         position: absolute;
@@ -82,6 +82,176 @@
         a {
             color: #000;
             text-transform: none;
+        }
+    }
+}
+
+@media  screen and (max-width: 1800px) {
+    .stages {
+        &__wrapper {
+            column-gap: 50px;
+        }
+        &__divider {
+            left: 200px;
+        }
+        &__divider2 {
+            left: 467px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1700px) {
+    .stages {
+        &__divider {
+            left: 180px;
+        }
+        &__divider2 {
+            left: 430px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1600px) {
+    .stages {
+        &__divider {
+            left: 150px;
+        }
+        &__divider2 {
+            left: 400px;
+        }
+    }
+}
+
+
+@media  screen and (max-width: 1500px) {
+    .stages {
+        &__divider {
+            left: 145px;
+        }
+        &__divider2 {
+            left: 355px;
+        }
+        &__btn {
+            right: 120px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1400px) {
+    .stages {
+        &__divider {
+            left: 125px;
+        }
+        &__divider2 {
+            left: 320px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1300px) {
+    .stages {
+        &__divider {
+            width: 56px;
+            left: 115px;
+        }
+        &__divider2 {
+            width: 56px;
+            left: 290px;
+        }
+        &__btn {
+            right: 50px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1200px) {
+    .stages {
+        &__info {
+            width: 300px;
+        }
+        &__title {
+            text-align: center;
+            font-size: 28px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__block {
+            font-size: 12px;
+        }
+        &__divider2 {
+            left: 300px;
+        }
+        &__btn {
+            right: 150px;
+            width: 200px;
+            height: 60px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1100px) {
+    .stages {
+        &__date {
+            column-gap: 20px;
+            transform: translateY(0);
+        }
+        &__block {
+            img {
+                width: 50px;
+            }
+        }
+        &__divider {
+            width: 36px;
+            left: 110px;
+            top: 20px;
+        }
+        &__divider2 {
+            width: 36px;
+            left: 260px;
+            top: 20px;
+        }
+        &__btn {
+            right: 100px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    .stages {
+        &__divider {
+            display: none;
+        }
+        &__divider2 {
+            display: none;
+        }
+        &__btn {
+            right: 70px;
+            bottom: -26px;
+        }
+    }
+}
+
+@media  screen and (max-width: 850px) {
+    .stages {
+        &__btn {
+            right: 0;
+            bottom: -50px;
+        }
+    }
+}
+
+@media  screen and (max-width: 759px) {
+    .stages {
+        &__title {
+            font-size: 20px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__btn {
+            right: 105px;
+            bottom: -68px;
         }
     }
 }
