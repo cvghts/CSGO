@@ -45,6 +45,11 @@ html {
 	}
 }
 
+@media  screen and (max-width: 1000px) {
+	.container {
+		padding: 0 70px;
+	}
+}
 
 @media  screen and (max-width: 768px) {
 	.container {

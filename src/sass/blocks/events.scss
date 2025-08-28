@@ -16,7 +16,6 @@
     &__divider {
         @include divider;
         margin-top: 40px;
-        width: 1518px;
     }
     &__actions {
         display: flex;
@@ -64,7 +63,6 @@
     .swiper__divider {
         @include divider;
         margin-top: 19px;
-        width: 279px;
     }
     .swiper__img {
         display: flex;
@@ -143,9 +141,6 @@
 
 @media  screen and (max-width: 1800px) {
     .events {
-        &__divider {
-            width: 1400px;
-        }
         .button-prev {
             left: 500px;
         }
@@ -155,19 +150,8 @@
     }
 }
 
-@media  screen and (max-width: 1600px) {
-    .events {
-        &__divider {
-            width: 1200px;
-        }
-    }
-}
-
 @media  screen and (max-width: 1440px) {
     .events {
-        &__divider {
-            width: 1000px;
-        }
         .button-prev {
             left: 300px;
         }
@@ -176,18 +160,8 @@
         }
     }
 }
-@media  screen and (max-width: 1200px) {
-    .events {
-        &__divider {
-            width: 900px;
-        }
-    }
-}
 @media  screen and (max-width: 1000px) {
     .events {
-        &__divider {
-            width: 700px;
-        }
         .button-prev {
             left: 200px;
         }
@@ -199,9 +173,6 @@
 
 @media  screen and (max-width: 768px) {
     .events {
-        &__divider {
-            width: 693px;
-        }
         .swiper__header {
             h2 {
                 font-size: 20px;
@@ -212,9 +183,6 @@
                     font-size: 26px;
                 }
             }
-        }
-        .swiper__divider {
-            width: 400px;
         }
         .teams div{
             font-size: 26px;
@@ -241,9 +209,6 @@
             font-size: 28px;
             text-align: center;
         }
-        &__divider {
-            display: none;
-        }
         .button-prev {
             display: none;
         }
@@ -265,9 +230,6 @@
                     font-size: 16px;
                 }
             }
-        }
-        .swiper__divider {
-            width: 250px;
         }
         .teams div{
             font-size: 16px;
