@@ -85,7 +85,6 @@
             border: none;
             background-color: #f3a917;
             a{
-                text-align: center;
                 color: #000;
             }
         }
@@ -128,6 +127,9 @@
         &__text {
             margin-top: 15px;
         }
+        &__btn {
+            padding: 5px 5px;
+        }
     }
 }
 @media  screen and (max-width: 576px) {
@@ -148,7 +150,6 @@
             gap: 20px;
         }
         &__btn {
-            padding: 5px 5px;
             a {
                 font-size: 14px;
             }
