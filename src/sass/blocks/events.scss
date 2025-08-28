@@ -144,13 +144,21 @@
 @media  screen and (max-width: 1800px) {
     .events {
         &__divider {
-            width: 1200px;
+            width: 1400px;
         }
         .button-prev {
             left: 500px;
         }
         .button-next {
             right: 500px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1600px) {
+    .events {
+        &__divider {
+            width: 1200px;
         }
     }
 }
@@ -171,7 +179,7 @@
 @media  screen and (max-width: 1200px) {
     .events {
         &__divider {
-            width: 800px;
+            width: 900px;
         }
     }
 }
@@ -188,10 +196,11 @@
         }
     }
 }
-@media  screen and (max-width: 759px) {
+
+@media  screen and (max-width: 768px) {
     .events {
         &__divider {
-            width: 659px;
+            width: 693px;
         }
         .swiper__header {
             h2 {

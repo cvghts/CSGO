@@ -39,7 +39,14 @@ html {
 	padding: 0 200px;
 }
 
-@media  screen and (max-width: 759px) {
+@media  screen and (max-width: 1200px) {
+	.container {
+		padding: 0 150px;
+	}
+}
+
+
+@media  screen and (max-width: 768px) {
 	.container {
 		padding: 0 30px;
 	}
