@@ -51,3 +51,9 @@ html {
 		padding: 0 30px;
 	}
 }
+
+@media  screen and (max-width: 376px) {
+	.container {
+		padding: 0 10px;
+	}
+}
