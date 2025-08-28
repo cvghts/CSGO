@@ -95,3 +95,45 @@
         }
     }
 }
+
+@media  screen and (max-width: 768px) {
+    .registered {
+        background: url('/src/img/main_bg_2.jpg') no-repeat 20%/cover;
+        padding-top: 300px;
+    }
+}
+@media  screen and (max-width: 576px) {
+    .registered {
+        &__nav {
+            column-gap: 30px;
+            row-gap: 10px;
+        }
+    }
+}
+@media  screen and (max-width: 400px) {
+    .registered {
+    &__title {
+        font-size: 28px;
+    }
+    &__subtitle {
+        font-size: 22px;
+    }
+    &__table {
+        thead {
+            font-size: 18px;
+        }
+        tbody {
+            font-size: 14px;
+        }
+    }
+    .table__number {
+        width: 60px;
+    }
+    &__nav {
+        &_item {
+            font-size: 18px;
+        }
+    }
+    }
+}
+

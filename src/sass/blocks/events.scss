@@ -235,3 +235,51 @@
         }
     }
 }
+@media  screen and (max-width: 650px) {
+    .events {
+        &__title {
+            font-size: 28px;
+            text-align: center;
+        }
+        &__divider {
+            display: none;
+        }
+        .button-prev {
+            display: none;
+        }
+        .button-next {
+            display: none;
+        }
+    }
+}
+
+@media  screen and (max-width: 375px) {
+    .events {
+        .swiper__header {
+            h2 {
+                font-size: 16px;
+            }
+            .time {
+                font-size: 14px;
+                time {
+                    font-size: 16px;
+                }
+            }
+        }
+        .swiper__divider {
+            width: 250px;
+        }
+        .teams div{
+            font-size: 16px;
+            span {
+                width: 60px;
+                height: 30px;
+                font-size: 16px;
+                transform: translateY(-10px);
+            }
+        }
+        .teams__start {
+            font-size: 14px;
+        }
+    }
+}

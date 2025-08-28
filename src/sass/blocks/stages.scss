@@ -255,3 +255,43 @@
         }
     }
 }
+
+@media  screen and (max-width: 576px) {
+    .stages {
+        &__wrapper {
+            display: block;
+        }
+        &__info {
+            width: 100%;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__text {
+            font-size: 18px;
+            text-align: center;
+        }
+        &__date {
+            display: block;
+            transform: translateY(0);
+        }
+        &__block {
+            font-size: 16px;
+            img {
+                display: none;
+            }
+        }
+        &__btn {
+            right: 145px;
+            bottom: -90px;
+        }
+    }
+}
+
+@media  screen and (max-width: 375px) {
+    .stages {
+        &__btn {
+            right: 40px;
+        }
+    }
+}

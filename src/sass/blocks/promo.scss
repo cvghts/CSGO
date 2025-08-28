@@ -101,7 +101,6 @@
 
 @media  screen and (max-width: 768px) {
     .promo {
-        height: 100%;
         &__wrapper {
             width: 100%;
         }
@@ -127,6 +126,37 @@
         }
         &__text {
             margin-top: 15px;
+        }
+    }
+}
+@media  screen and (max-width: 576px) {
+    .promo {
+        background: url('/src/img/main_bg.jpg') no-repeat 60%/cover;
+        &__divider {
+            width: 500px;
+        }
+    }
+}
+@media  screen and (max-width: 375px) {
+    .promo {
+        background: url('/src/img/main_bg.jpg') no-repeat 65%/cover;
+        &__divider {
+            width: 300px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__actions {
+            gap: 20px;
+        }
+        &__btn {
+            padding: 5px 5px;
+            a {
+                font-size: 14px;
+            }
         }
     }
 }
