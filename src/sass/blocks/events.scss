@@ -26,7 +26,6 @@
     &__btn {
         @include btn;
         a {
-            text-align: center;
             text-transform: none;
         }
         &-orange {
@@ -202,6 +201,12 @@
     .events {
         &__divider {
             width: 693px;
+        }
+        &__btn {
+            a {
+                text-align: center;
+                padding: 5px 5px;
+            }
         }
         .swiper__header {
             h2 {
