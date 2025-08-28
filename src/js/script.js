@@ -4,17 +4,16 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import mainBg from '/src/img/main_bg.jpg';
+import mainBg4 from '/src/img/main_bg_4.jpg';
+import mainBg3 from '/src/img/main_bg_3.jpg';
 import "/src/sass/style.scss";
 
 try {
     document.addEventListener('DOMContentLoaded', () => {
         const promo = document.querySelector('.promo');
         const dots = document.querySelectorAll('.promo__dot');
-        const images = [
-            '/src/img/main_bg.jpg',
-            '/src/img/main_bg_4.jpg',
-            '/src/img/main_bg_3.jpg'
-        ];
+        const images = [mainBg, mainBg4, mainBg3];
     
         const updateSlider = (index) => {
             promo.style.backgroundImage = `url(${images[index]})`;
