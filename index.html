@@ -28,24 +28,24 @@
         <title>CSGO</title>
     </head>
     <body>
-        <section class="promo">
+        <section class="promo" id="promo">
             <div class="container">
                 <div class="promo__wrapper">
                     <div class="promo__header">
                         <img src="/src/icons/star.svg" alt="star">
                         <ul class="promo__social">
                             <li>
-                                <a href="#">
+                                <a href="https://x.com/">
                                     <span class="icon-twitter"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.twitch.tv/">
                                     <span class="icon-twitch "></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.facebook.com/?locale=uk_UA">
                                     <span class="icon-facebook"></span>
                                 </a>
                             </li>
@@ -61,8 +61,8 @@
                     </div>
                 </div>
                 <div class="promo__actions">
-                    <button class="promo__btn promo__btn-orange"><a href="#">read announcment</a></button>
-                    <button class="promo__btn"><a href="#">get tickets</a></button>
+                    <button class="promo__btn promo__btn-orange"><a href="#stages">read announcment</a></button>
+                    <button class="promo__btn"><a href="https://kontramarka.ua/uk/csgo-starseries-36763.html">get tickets</a></button>
                 </div>
                 <div class="promo__dots">
                     <span class="promo__dot active"></span>
@@ -71,12 +71,12 @@
                 </div>
             </div>
         </section>
-        <section class="events">
+        <section class="events" id="events__matches">
             <div class="container">
                 <h1 class="events__title">Schedule and results</h1>
                 <div class="events__divider"></div>
                 <div class="events__actions">
-                    <button class="events__btn events__btn-orange"><a href="#">Matches</a></button>
+                    <button class="events__btn events__btn-orange"><a href="#events__matches">Matches</a></button>
                     <button class="events__btn"><a href="#">Battles</a></button>
                 </div>
                 
@@ -197,7 +197,7 @@
                   <button class="button-next"><img src="/src/icons/events/Arrow_2.png" alt="icons-right"></button>
             </div>
         </section>
-        <section class="stages">
+        <section class="stages" id="stages">
             <div class="container">
                 <div class="stages__wrapper">
                     <div class="stages__info">
@@ -280,9 +280,16 @@
                         </tbody>
                     </table>
                     <div class="registered__nav">
-                        <div class="registered__nav_item">Support</div>
-                        <div class="registered__nav_item">Rules</div>
-                        <div class="registered__nav_item">Faq</div>
+                        <div class="registered__nav_item"><a href="#" id="support-link">Support</a></div>
+                        <div class="registered__nav_item"><a href="#" id="rules-link">Rules</a></div>
+                        <div class="registered__nav_item"><a href="#">Faq</a></div>
+                    </div>
+                    <div id="rules-modal" style="display:none;">
+                        <div class="modal-content">
+                            <h2>Правила</h2>
+                            <p>Тут типу мають бути правила користування сайтом...</p>
+                            <button class="close-rules" id="close-rules">Закрити</button>
+                        </div>
                     </div>
                 </div>
             </div>

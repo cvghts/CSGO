@@ -60,3 +60,28 @@ try {
         modules: [Navigation, Pagination],
       });
 } catch (e) {}
+
+// Підтримка
+document.getElementById('support-link').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // Спробуємо відкрити Gmail
+    const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=yarosh@gmail.com';
+    const newWindow = window.open(gmailUrl, '_blank');
+
+    // Якщо блоковано або не відкривається, fallback на mailto:
+    if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+        window.location.href = 'mailto:yarosh@gmail.com';
+    }
+});
+
+// Rules: відкриття модалки
+document.getElementById('rules-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('rules-modal').style.display = 'block';
+});
+
+// Закриття модалки кнопкою
+document.getElementById('close-rules').addEventListener('click', function() {
+    document.getElementById('rules-modal').style.display = 'none';
+});
