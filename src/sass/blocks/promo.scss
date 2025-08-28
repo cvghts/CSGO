@@ -113,7 +113,7 @@
             gap: 10px;
         }
         &__divider {
-            width: 690px;
+            display: none;
         }
         &__info {
             width: 100%;
@@ -132,17 +132,11 @@
 @media  screen and (max-width: 576px) {
     .promo {
         background: url('/src/img/main_bg.jpg') no-repeat 60%/cover;
-        &__divider {
-            width: 500px;
-        }
     }
 }
 @media  screen and (max-width: 376px) {
     .promo {
         background: url('/src/img/main_bg.jpg') no-repeat 65%/cover;
-        &__divider {
-            width: 300px;
-        }
         &__title {
             font-size: 20px;
         }
